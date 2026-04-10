@@ -9,5 +9,5 @@ public:
   int vie() const;
 
 private:
-  int m_vie;
+  int m_vie = 30;
 };
