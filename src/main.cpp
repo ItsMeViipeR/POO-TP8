@@ -9,6 +9,19 @@
 #include "Voiture.hpp"
 #include <iostream>
 
+void triNombre(int n, Nombre *T[]) {
+  for (int i = 0; i < n - 1; i++) {
+    for (int j = 0; j < n - i - 1; j++) {
+      if (T[j]->getValue() > T[j + 1]->getValue()) {
+        // On échange les pointeurs
+        Nombre *temp = T[j];
+        T[j] = T[j + 1];
+        T[j + 1] = temp;
+      }
+    }
+  }
+}
+
 int main() {
   Moto moto = Moto("BMW");
   Voiture voiture = Voiture("Ford");
@@ -33,6 +46,13 @@ int main() {
   T[1] = new Fraction{3, 2}; // fraction 3/2 (= 1.5)
   T[2] = new Float{345.556};
   T[3] = new Fraction{2, 3}; // fraction 2/3 (~ 0.6666)
+
+  for (int i = 0; i < 4; i++) {
+    T[i]->afficher();
+    std::cout << std::endl;
+  }
+
+  triNombre(3, T);
 
   for (int i = 0; i < 4; i++) {
     T[i]->afficher();
