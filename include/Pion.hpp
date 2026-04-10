@@ -3,11 +3,11 @@
 class Pion {
 public:
   Pion();
-  ~Pion();
+  virtual ~Pion();
 
+  void setVie(int vie);
   int vie() const;
 
 private:
   int m_vie;
-  void setVie(int vie);
 };
