@@ -14,7 +14,9 @@ set(SOURCES
 	src/Pion.cpp
 	src/Soldat.cpp
 	src/Soigneur.cpp
-	src/Nombre.cpp
+	src/Entier.cpp
+	src/Float.cpp
+	src/Fraction.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
