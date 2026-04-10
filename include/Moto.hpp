@@ -3,7 +3,7 @@
 #include "Vehicule.hpp"
 #include <string>
 
-class Moto : protected Vehicule {
+class Moto : public Vehicule {
 public:
   Moto(std::string brand);
   ~Moto();
