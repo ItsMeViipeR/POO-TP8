@@ -7,6 +7,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include_directories(include)
 
-set(SOURCES src/main.cpp)
+set(SOURCES src/main.cpp src/Voiture.cpp)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
