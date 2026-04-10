@@ -2,8 +2,8 @@
 
 class Nombre {
 public:
-  Nombre();
-  virtual ~Nombre();
+  Nombre() = default;
+  virtual ~Nombre() = default;
 
   virtual double getValue() const = 0;
   virtual void afficher() const = 0;
