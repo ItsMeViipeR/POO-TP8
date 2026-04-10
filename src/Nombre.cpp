@@ -1,5 +1,4 @@
 #include "Nombre.hpp"
-#include <iostream>
 
 Nombre::Nombre() {}
 
