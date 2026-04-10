@@ -9,4 +9,5 @@ public:
 
 private:
   int m_vie;
+  void setVie(int vie);
 };
